@@ -14,7 +14,7 @@ var push = new Pushover({
 function notify() {
     console.log('running notify')
     push.send(
-        process.env.USERKEY,
+        process.env.USERKEY, // library wants the userkey here 🤷🏻‍♂️ 
         "Subject goes here",
         "Message goes here",
         myFilePath,

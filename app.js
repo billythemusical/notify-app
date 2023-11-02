@@ -11,7 +11,11 @@ var push = new Pushover({
 })
 
 function notify() {
-    push.send("Test Subject", "My message", handleErrors)
+    push.send(
+        "Subject goes here",
+        "Message goes here",
+        handleErrors
+    )
 }
 
 function handleErrors(error, response) {
